@@ -20,6 +20,7 @@ scmVersion {
     tag {
         prefix = 'release-plugin'
     }
+
 }
 project.version = scmVersion.version
 
