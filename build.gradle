@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        mavenLocal()
+    }
+}
+plugins {
+    id 'java'
+    id 'pl.allegro.tech.build.axion-release' version '1.12.1'
+
+}
+
+group 'org.example'
+
+
+repositories {
+    mavenCentral()
+}
+
+scmVersion {
+    tag {
+        prefix = 'release-plugin'
+    }
+}
+project.version = scmVersion.version
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
