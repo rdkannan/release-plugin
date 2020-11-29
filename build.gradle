@@ -17,6 +17,7 @@ repositories {
 }
 
 scmVersion {
+    versionIncrementer 'incrementMinor'
     tag {
         prefix = 'release-plugin'
     }
